@@ -1,0 +1,55 @@
+13.
+git fetch origin
+гранките креирани од GitHub ќе бидат достапни локално
+
+14.
+git checkout 1-remove-a-task-by-name
+се префрламе на гранката за првиот issue "1-remove-a-task-by-name"
+
+15.
+имплементација правиме локално во "SI2025Lab1Main.java"
+
+16.
+git add SI2025Lab1Main.java
+git commit -m "Implement removeTask by name"
+додаваме датотека во staging и правиме commit со порака "Implement removeTask by name2"
+
+17.
+git push origin 1-remove-a-task-by-name
+синхронизираме локалната гранка со remote
+
+18.
+креираме pull request на GitHub
+
+19.
+git checkout 3-list-tasks-sorted-by-name
+git add SI2025Lab1Main.java
+git commit -m "Implement sorted by name"
+git push origin 3-list-tasks-sorted-by-name
+
+git checkout 4-sort-tasks-by-priority
+git add SI2025Lab1Main.java
+git commit -m "Implement sorted by priority"
+git push origin 4-sort-tasks-by-priority
+
+го правиме истото и за останатите гранки
+
+20.
+се спојуваат без конфликт
+
+21.
+автоматски се префрлени во Done
+
+22.
+git checkout master
+git merge 4-sort-tasks-by-priority
+се префрламе на гранката master, и ја спојуваме со "4-sort-tasks-by-priority"
+
+23.
+git push origin master
+синхронизираме master со remote 
+
+24.
+pull request-от за гранката "4-sort-tasks-by-priority" е затворен и е преместен во Done
+
+
